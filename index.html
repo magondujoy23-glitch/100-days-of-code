@@ -3,27 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 Days of Code - Day 1</title>
+    <title>Developer Journal</title>
+    <style>
+        body {
+            font-family: 'Source Code Pro', 'Courier New', monospace; 
+            background-color: #2c4467;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #0c121a;
+            padding: 28px;
+            border-radius: 8px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+            max-width: 380px;
+            width: 90%;
+            border-top: 4px solid #47241e;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        /* Subtle lift effect to explore CSS hover states */
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 1.35rem;
+            color: #f89b9b;
+            border-bottom: 1px solid #c0cddc;
+            padding-bottom: 8px;
+        }
+
+        .card p {
+            margin: 0 0 20px 0;
+            line-height: 1.6;
+            font-size: 0.92rem;
+            color: #d4e3f4;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #58281f;
+            color: #ffffff;
+            padding: 10px 18px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.88rem;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #d13d22;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Developer Journal</h1>
-        <p>Goal: Market-ready web developer by January 2027.</p>
-    </header>
 
-    <main>
-        <section>
-            <h2>Day 1 Setup & Commitments</h2>
-            <ul>
-                <li>Installed Node.js LTS and Git.</li>
-                <li>Configured local Git environment with VS Code.</li>
-                <li>Created GitHub repository for daily progress tracking.</li>
-            </ul>
-        </section>
-    </main>
+    <div class="card">
+        <h2>Developer Milestone</h2>
+        <p>Building core full-stack skills through hands-on projects. Currently mastering responsive layouts, clean code structure, and Git workflows targeting January 2027.</p>
+        <a href="https://github.com" target="_blank" class="btn">View Project Repository</a>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Developer Progress Journal</p>
-    </footer>
 </body>
 </html>
